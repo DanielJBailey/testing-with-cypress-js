@@ -1,11 +1,8 @@
-describe("First Test", () => {
-   it("is working", () => {
-      expect(true).to.equal(true);
+describe ('Sixth Tests', () => {
+   context ('No Todos', () => {
+     it ('Adds a new todo', () => {
+       cy.visit ('/');
+       cy.get ('.new-task').type ('This is my new todo').type ('{enter}');
+     });
    });
-});
-
-describe("Second Test", () => {
-   it("Visit the app", () => {
-      cy.visit("/");
-   });
-});
+ });

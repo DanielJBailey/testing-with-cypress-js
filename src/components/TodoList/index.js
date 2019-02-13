@@ -47,6 +47,8 @@ class TodoList extends Component {
             <input
               ref={a => (this._inputElement = a)}
               placeholder="enter task"
+              autoFocus
+              className="new-task"
             />
             <button type="submit">add</button>
           </form>
